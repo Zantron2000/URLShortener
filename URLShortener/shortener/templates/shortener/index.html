@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URL Shortener</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'shortener/css/index.css' %}"></style>
+    </head>
+
+    <body>
+        <div class="content">    
+            <h1>The Url Shortener</h1>
+            <p>Enter in a url to recieve a shortened version</p>
+            <form action="/create", method="post">
+                {% csrf_token %}
+                <input class="url" type="text" name="url"></input>
+                <input class="submit" type="submit"></input>
+            </form>
+        </div>
+    </body>
+</html>

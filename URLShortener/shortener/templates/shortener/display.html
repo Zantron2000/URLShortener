@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URL Shortener</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'shortener/css/index.css' %}"></style>
+    </head>
+
+    <body>
+        <div class="content">
+            <div class="bgc-white">
+                <h1>New Link: {{ link }}</h1>
+            </div>
+        </div>
+    </body>
+</html>
